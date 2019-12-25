@@ -15,6 +15,7 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "dotenv-rails"
+gem "cloudinary"
 
 group :development do
   gem "pry", "~> 0.12.2"

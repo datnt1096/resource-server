@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  username: root
+  password: admin
+
+development:
+  <<: *default
+  database: oauth-development
+
+test:
+  <<: *default
+  database: oauth-test
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  url: <%= ENV["DATABASE_URL"] %>
